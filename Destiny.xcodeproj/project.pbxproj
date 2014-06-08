@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		E518D1EC19449BD90009721E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E518D1EB19449BD90009721E /* AppDelegate.swift */; };
 		E518D1EE19449BD90009721E /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E518D1ED19449BD90009721E /* RootViewController.swift */; };
-		E518D1F019449BD90009721E /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E518D1EF19449BD90009721E /* DataViewController.swift */; };
-		E518D1F219449BD90009721E /* ModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E518D1F119449BD90009721E /* ModelController.swift */; };
 		E518D1F519449BD90009721E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E518D1F319449BD90009721E /* Main.storyboard */; };
 		E518D1F719449BD90009721E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E518D1F619449BD90009721E /* Images.xcassets */; };
 		E518D20319449BD90009721E /* DestinyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E518D20219449BD90009721E /* DestinyTests.swift */; };
@@ -31,8 +29,6 @@
 		E518D1EA19449BD90009721E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E518D1EB19449BD90009721E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E518D1ED19449BD90009721E /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
-		E518D1EF19449BD90009721E /* DataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataViewController.swift; sourceTree = "<group>"; };
-		E518D1F119449BD90009721E /* ModelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelController.swift; sourceTree = "<group>"; };
 		E518D1F419449BD90009721E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E518D1F619449BD90009721E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		E518D1FC19449BD90009721E /* DestinyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DestinyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -81,8 +77,6 @@
 			children = (
 				E518D1EB19449BD90009721E /* AppDelegate.swift */,
 				E518D1ED19449BD90009721E /* RootViewController.swift */,
-				E518D1EF19449BD90009721E /* DataViewController.swift */,
-				E518D1F119449BD90009721E /* ModelController.swift */,
 				E518D1F319449BD90009721E /* Main.storyboard */,
 				E518D1F619449BD90009721E /* Images.xcassets */,
 				E518D1E919449BD90009721E /* Supporting Files */,
@@ -216,8 +210,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				E518D1EE19449BD90009721E /* RootViewController.swift in Sources */,
-				E518D1F219449BD90009721E /* ModelController.swift in Sources */,
-				E518D1F019449BD90009721E /* DataViewController.swift in Sources */,
 				E518D1EC19449BD90009721E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
