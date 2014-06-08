@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E51560471944AC1200089FBE /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E51560461944AC1200089FBE /* SettingsViewController.swift */; };
 		E518D1EC19449BD90009721E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E518D1EB19449BD90009721E /* AppDelegate.swift */; };
 		E518D1EE19449BD90009721E /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E518D1ED19449BD90009721E /* RootViewController.swift */; };
 		E518D1F519449BD90009721E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E518D1F319449BD90009721E /* Main.storyboard */; };
@@ -25,6 +26,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E51560461944AC1200089FBE /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		E518D1E619449BD90009721E /* Destiny.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Destiny.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E518D1EA19449BD90009721E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E518D1EB19449BD90009721E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -34,6 +36,7 @@
 		E518D1FC19449BD90009721E /* DestinyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DestinyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E518D20119449BD90009721E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E518D20219449BD90009721E /* DestinyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinyTests.swift; sourceTree = "<group>"; };
+		E58527D21944B7FD0062C5FF /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +83,8 @@
 				E518D1F319449BD90009721E /* Main.storyboard */,
 				E518D1F619449BD90009721E /* Images.xcassets */,
 				E518D1E919449BD90009721E /* Supporting Files */,
+				E51560461944AC1200089FBE /* SettingsViewController.swift */,
+				E58527D21944B7FD0062C5FF /* RootViewController.h */,
 			);
 			path = Destiny;
 			sourceTree = "<group>";
@@ -211,6 +216,7 @@
 			files = (
 				E518D1EE19449BD90009721E /* RootViewController.swift in Sources */,
 				E518D1EC19449BD90009721E /* AppDelegate.swift in Sources */,
+				E51560471944AC1200089FBE /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -402,6 +408,7 @@
 				E518D20819449BD90009721E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E518D20919449BD90009721E /* Build configuration list for PBXNativeTarget "DestinyTests" */ = {
 			isa = XCConfigurationList;
@@ -410,6 +417,7 @@
 				E518D20B19449BD90009721E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
