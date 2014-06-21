@@ -14,6 +14,7 @@
 		E518D1F719449BD90009721E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E518D1F619449BD90009721E /* Images.xcassets */; };
 		E518D20319449BD90009721E /* DestinyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E518D20219449BD90009721E /* DestinyTests.swift */; };
 		E583A5461955BE4700B1203C /* DiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E583A5451955BE4700B1203C /* DiceViewController.swift */; };
+		E5B172461955E4C5001584ED /* dice.wav in Resources */ = {isa = PBXBuildFile; fileRef = E5B172451955E4C5001584ED /* dice.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +40,7 @@
 		E518D20219449BD90009721E /* DestinyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinyTests.swift; sourceTree = "<group>"; };
 		E583A5451955BE4700B1203C /* DiceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiceViewController.swift; sourceTree = "<group>"; };
 		E58527D21944B7FD0062C5FF /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		E5B172451955E4C5001584ED /* dice.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = dice.wav; path = ../assets/dice.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 		E518D1E819449BD90009721E /* Destiny */ = {
 			isa = PBXGroup;
 			children = (
+				E5B172451955E4C5001584ED /* dice.wav */,
 				E518D1EB19449BD90009721E /* AppDelegate.swift */,
 				E518D1ED19449BD90009721E /* RootViewController.swift */,
 				E518D1F319449BD90009721E /* Main.storyboard */,
@@ -198,6 +201,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5B172461955E4C5001584ED /* dice.wav in Resources */,
 				E518D1F519449BD90009721E /* Main.storyboard in Resources */,
 				E518D1F719449BD90009721E /* Images.xcassets in Resources */,
 			);
