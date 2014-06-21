@@ -8,14 +8,18 @@
 
 import UIKit
 
-class DiceViewController: NSObject, UICollectionViewDataSource {
+class DiceViewController: UICollectionViewController {
     
-    func collectionView(collectionView: UICollectionView!, numberOfItemsInSection section: Int) -> Int {
+    override func collectionView(collectionView: UICollectionView!, numberOfItemsInSection section: Int) -> Int {
         return 4
     }
     
-    func collectionView(collectionView: UICollectionView!, cellForItemAtIndexPath indexPath: NSIndexPath!) -> UICollectionViewCell! {
+    override func collectionView(collectionView: UICollectionView!, cellForItemAtIndexPath indexPath: NSIndexPath!) -> UICollectionViewCell! {
         return collectionView.dequeueReusableCellWithReuseIdentifier("die", forIndexPath: indexPath) as UICollectionViewCell
+    }
+    
+    @IBAction func roll(sender: AnyObject!) {
+        
     }
 
 }
