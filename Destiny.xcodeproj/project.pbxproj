@@ -17,6 +17,7 @@
 		E583A5461955BE4700B1203C /* DiceCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E583A5451955BE4700B1203C /* DiceCollectionViewController.swift */; };
 		E5B172461955E4C5001584ED /* dice.wav in Resources */ = {isa = PBXBuildFile; fileRef = E5B172451955E4C5001584ED /* dice.wav */; };
 		E5B172481955EB1A001584ED /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B172471955EB1A001584ED /* Settings.swift */; };
+		E5EC47C1195713C40004F950 /* Roll.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5EC47C0195713C40004F950 /* Roll.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		E58527D21944B7FD0062C5FF /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		E5B172451955E4C5001584ED /* dice.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = dice.wav; path = ../assets/out/dice.wav; sourceTree = "<group>"; };
 		E5B172471955EB1A001584ED /* Settings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		E5EC47C0195713C40004F950 /* Roll.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Roll.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 				E583A5451955BE4700B1203C /* DiceCollectionViewController.swift */,
 				E5B172471955EB1A001584ED /* Settings.swift */,
 				E56BFB121956EABC00A5270F /* SettingsViewController.swift */,
+				E5EC47C0195713C40004F950 /* Roll.swift */,
 			);
 			path = Destiny;
 			sourceTree = "<group>";
@@ -228,6 +231,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E518D1EE19449BD90009721E /* RootViewController.swift in Sources */,
+				E5EC47C1195713C40004F950 /* Roll.swift in Sources */,
 				E518D1EC19449BD90009721E /* AppDelegate.swift in Sources */,
 				E51560471944AC1200089FBE /* SettingsTableViewController.swift in Sources */,
 				E583A5461955BE4700B1203C /* DiceCollectionViewController.swift in Sources */,

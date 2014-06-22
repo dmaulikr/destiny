@@ -1,11 +1,3 @@
-//
-//  DiceDataSource.swift
-//  Destiny
-//
-//  Created by Thomas Castiglione on 21/06/2014.
-//  Copyright (c) 2014 Thomas Castiglione. All rights reserved.
-//
-
 import UIKit
 
 class DiceCollectionViewController: UICollectionViewController {
@@ -18,8 +10,7 @@ class DiceCollectionViewController: UICollectionViewController {
         return collectionView.dequeueReusableCellWithReuseIdentifier("die", forIndexPath: indexPath) as UICollectionViewCell
     }
     
-    @IBAction func roll(sender: AnyObject!) {
-        
+    func display(roll: Roll) {
     }
 
 }

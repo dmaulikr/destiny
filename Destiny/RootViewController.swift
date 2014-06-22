@@ -8,12 +8,16 @@ import AVFoundation
     
     var diceCollection: DiceCollectionViewController!
     
+    var currentRoll: Roll
+    
     init(coder: NSCoder?) {
         config = Settings()
         
         let soundPath = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("dice", ofType: "wav"))
         player = AVAudioPlayer(contentsOfURL: soundPath, error: nil)
         player.prepareToPlay() //prevent audio lag
+        
+        currentRoll = Roll(0,0,0,0)
         
         super.init(coder: coder)
     }
@@ -22,6 +26,7 @@ import AVFoundation
         switch segue?.identifier {
         case .Some("embed"):
             diceCollection = segue!.destinationViewController as DiceCollectionViewController
+            diceCollection.display(currentRoll)
         default:
             return
         }
@@ -39,6 +44,9 @@ import AVFoundation
             }
             player.play()
         }
+        
+        currentRoll = Roll()
+        diceCollection.display(currentRoll)
     }
     
 }
