@@ -121,6 +121,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                        <view key="tableFooterView" contentMode="scaleToFill" id="alP-B2-wwk" userLabel="Footer View">
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </view>
                         <sections>
                             <tableViewSection id="N5L-QQ-TFd">
                                 <cells>
@@ -197,7 +201,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="ybP-nz-XLd" firstAttribute="top" secondItem="0E7-kd-V1C" secondAttribute="bottom" id="AVg-gv-bfL"/>
+                            <constraint firstItem="ybP-nz-XLd" firstAttribute="top" secondItem="0E7-kd-V1C" secondAttribute="bottom" id="7He-BF-Ppp"/>
                             <constraint firstItem="0E7-kd-V1C" firstAttribute="width" secondItem="w0C-fq-rKd" secondAttribute="width" id="G4e-S2-Sg7"/>
                             <constraint firstAttribute="centerX" secondItem="0E7-kd-V1C" secondAttribute="centerX" id="KVA-IM-wfX"/>
                             <constraint firstAttribute="centerX" secondItem="w0C-fq-rKd" secondAttribute="centerX" id="QPN-u9-ySW"/>
