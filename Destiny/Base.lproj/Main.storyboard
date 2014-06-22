@@ -44,7 +44,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hzz-Of-ITF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="625" y="-604.5"/>
+            <point key="canvasLocation" x="688" y="-344.5"/>
         </scene>
         <!--Root View Controller-->
         <scene sceneID="clB-vc-fyl">
@@ -110,7 +110,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q3h-pU-vEd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-87" y="-457"/>
+            <point key="canvasLocation" x="4" y="-124"/>
         </scene>
         <!--Settings Table View Controller-->
         <scene sceneID="N1U-kH-DLr">
@@ -162,7 +162,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wRE-bR-HFs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1281" y="-199"/>
+            <point key="canvasLocation" x="1343" y="104"/>
         </scene>
         <!--Settings View Controller-->
         <scene sceneID="bbt-yd-0sR">
@@ -182,7 +182,7 @@
                                     <navigationItem title="Settings" id="EDx-va-9W9">
                                         <barButtonItem key="rightBarButtonItem" systemItem="done" id="Xcl-ba-o4Y">
                                             <connections>
-                                                <segue destination="XML-fw-LKu" kind="unwind" unwindAction="settingsDone:" id="6L2-GS-2Fx"/>
+                                                <segue destination="XML-fw-LKu" kind="unwind" identifier="pop" unwindAction="settingsDone:" id="6L2-GS-2Fx"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
@@ -191,7 +191,7 @@
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0E7-kd-V1C">
                                 <rect key="frame" x="0.0" y="64" width="480" height="416"/>
                                 <connections>
-                                    <segue destination="e4u-gD-G3J" kind="embed" id="4at-Tw-Ezz"/>
+                                    <segue destination="e4u-gD-G3J" kind="embed" identifier="embed" id="4at-Tw-Ezz"/>
                                 </connections>
                             </containerView>
                         </subviews>
@@ -211,7 +211,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R7h-40-2GF" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="XML-fw-LKu" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="625" y="-199"/>
+            <point key="canvasLocation" x="688" y="104"/>
         </scene>
     </scenes>
     <resources>
