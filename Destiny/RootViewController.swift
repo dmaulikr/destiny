@@ -1,11 +1,9 @@
 import UIKit
 import AVFoundation
 
-@objc(RootViewController) class RootViewController: UIViewController, AVAudioPlayerDelegate {
+@objc(RootViewController) class RootViewController: UIViewController {
     
     let config: Settings
-    let queue: dispatch_queue_t
-    let audio_finished: dispatch_semaphore_t
     let player: AVAudioPlayer
     
     @IBOutlet var diceView: DiceViewController
@@ -13,16 +11,11 @@ import AVFoundation
     init(coder: NSCoder?) {
         config = Settings()
         
-        queue = dispatch_queue_create("audio", nil)
-        audio_finished = dispatch_semaphore_create(0)
-        
         let soundPath = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("dice", ofType: "wav"))
         player = AVAudioPlayer(contentsOfURL: soundPath, error: nil)
-        player.volume = 1.0
+        player.prepareToPlay() //prevent audio lag
         
         super.init(coder: coder)
-        
-        player.delegate = self
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue!, sender: AnyObject?) {
@@ -40,16 +33,13 @@ import AVFoundation
     }
     
     @IBAction func roll(sender: AnyObject!) {
-        if (config.sound) {
-            dispatch_async(queue) {
-                self.player.play()
-                dispatch_semaphore_wait(self.audio_finished, DISPATCH_TIME_FOREVER)
+        if config.sound {
+            if player.playing { //preempt current audio
+                player.pause()
+                player.currentTime = 0
             }
+            player.play()
         }
-    }
-    
-    func audioPlayerDidFinishPlaying(player: AVAudioPlayer!, successfully flag: Bool) {
-        dispatch_semaphore_signal(audio_finished)
     }
     
 }
