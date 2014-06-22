@@ -1,15 +1,14 @@
 import UIKit
 
-class SettingsViewController: UITableViewController {
-    var model: Settings!
+class SettingsViewController: UIViewController {
+    var settingsTable: SettingsTableViewController!
     
-    @IBOutlet var sound: UISwitch
-    
-    override func viewDidLoad() {
-        sound.on = model.sound
-    }
-    
-    override func prepareForSegue(segue: UIStoryboardSegue!, sender: AnyObject!) {
-        model.sound = sound.on
+    //two segues are sourced here: one to embed the settings table, one to return home
+    override func prepareForSegue(segue: UIStoryboardSegue!, sender: AnyObject?) {
+        if let table = segue.destinationViewController as? SettingsTableViewController {
+            settingsTable = table
+        } else {
+            settingsTable.commit()
+        }
     }
 }

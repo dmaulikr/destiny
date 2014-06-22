@@ -18,17 +18,7 @@ import AVFoundation
         super.init(coder: coder)
     }
     
-    override func prepareForSegue(segue: UIStoryboardSegue!, sender: AnyObject?) {
-        if let settings = segue.destinationViewController as? SettingsViewController {
-            settings.model = config
-        }
-    }
-    
     @IBAction func settingsDone(segue: UIStoryboardSegue!) {
-        config.save()
-    }
-    
-    @IBAction func settingsCancel(segue: UIStoryboardSegue!) {
         config.reset()
     }
     

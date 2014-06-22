@@ -3,7 +3,7 @@ import Foundation
 class Settings {
     let defaults: NSUserDefaults
     
-    var sound: Bool = false
+    var sound: Bool = true
     
     init() {
         defaults = NSUserDefaults.standardUserDefaults()
