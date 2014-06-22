@@ -5,10 +5,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6153.13"/>
     </dependencies>
     <scenes>
-        <!--Dice View Controller-->
+        <!--Dice Collection View Controller-->
         <scene sceneID="rq5-Bk-mtS">
             <objects>
-                <collectionViewController id="3Pv-x3-ykO" customClass="DiceViewController" customModule="Destiny" customModuleProvider="target" sceneMemberID="viewController">
+                <collectionViewController id="3Pv-x3-ykO" customClass="DiceCollectionViewController" customModule="Destiny" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" dataMode="prototypes" id="Auf-b8-uo0">
                         <rect key="frame" x="0.0" y="0.0" width="440" height="185"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -78,7 +78,7 @@
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dFD-sx-jYb">
                                 <rect key="frame" x="20" y="172" width="440" height="185"/>
                                 <connections>
-                                    <segue destination="3Pv-x3-ykO" kind="embed" identifier="" id="HRY-u5-dQm"/>
+                                    <segue destination="3Pv-x3-ykO" kind="embed" identifier="embed" id="HRY-u5-dQm"/>
                                 </connections>
                             </containerView>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="RGM-Y2-ytR">
@@ -129,15 +129,15 @@
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="IUe-7m-xP5" id="sad-dq-HBM">
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
+                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="flg-zR-MKS">
+                                                    <rect key="frame" x="411" y="6" width="51" height="31"/>
+                                                </switch>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sound" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DxU-Ss-D4A">
                                                     <rect key="frame" x="20" y="11" width="51" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="flg-zR-MKS">
-                                                    <rect key="frame" x="411" y="6" width="51" height="31"/>
-                                                </switch>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="DxU-Ss-D4A" firstAttribute="leading" secondItem="sad-dq-HBM" secondAttribute="leading" constant="20" id="F96-9w-tcW"/>

@@ -6,7 +6,7 @@ import AVFoundation
     let config: Settings
     let player: AVAudioPlayer
     
-    @IBOutlet var diceView: DiceViewController
+    var diceCollection: DiceCollectionViewController!
     
     init(coder: NSCoder?) {
         config = Settings()
@@ -16,6 +16,15 @@ import AVFoundation
         player.prepareToPlay() //prevent audio lag
         
         super.init(coder: coder)
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue?, sender: AnyObject?) {
+        switch segue?.identifier {
+        case .Some("embed"):
+            diceCollection = segue!.destinationViewController as DiceCollectionViewController
+        default:
+            return
+        }
     }
     
     @IBAction func settingsDone(segue: UIStoryboardSegue!) {

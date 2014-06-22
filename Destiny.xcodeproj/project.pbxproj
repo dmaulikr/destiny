@@ -14,7 +14,7 @@
 		E518D1F719449BD90009721E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E518D1F619449BD90009721E /* Images.xcassets */; };
 		E518D20319449BD90009721E /* DestinyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E518D20219449BD90009721E /* DestinyTests.swift */; };
 		E56BFB131956EABC00A5270F /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E56BFB121956EABC00A5270F /* SettingsViewController.swift */; };
-		E583A5461955BE4700B1203C /* DiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E583A5451955BE4700B1203C /* DiceViewController.swift */; };
+		E583A5461955BE4700B1203C /* DiceCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E583A5451955BE4700B1203C /* DiceCollectionViewController.swift */; };
 		E5B172461955E4C5001584ED /* dice.wav in Resources */ = {isa = PBXBuildFile; fileRef = E5B172451955E4C5001584ED /* dice.wav */; };
 		E5B172481955EB1A001584ED /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B172471955EB1A001584ED /* Settings.swift */; };
 /* End PBXBuildFile section */
@@ -41,7 +41,7 @@
 		E518D20119449BD90009721E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E518D20219449BD90009721E /* DestinyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinyTests.swift; sourceTree = "<group>"; };
 		E56BFB121956EABC00A5270F /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
-		E583A5451955BE4700B1203C /* DiceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiceViewController.swift; sourceTree = "<group>"; };
+		E583A5451955BE4700B1203C /* DiceCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiceCollectionViewController.swift; sourceTree = "<group>"; };
 		E58527D21944B7FD0062C5FF /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		E5B172451955E4C5001584ED /* dice.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = dice.wav; path = ../assets/dice.wav; sourceTree = "<group>"; };
 		E5B172471955EB1A001584ED /* Settings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
@@ -94,7 +94,7 @@
 				E518D1E919449BD90009721E /* Supporting Files */,
 				E51560461944AC1200089FBE /* SettingsTableViewController.swift */,
 				E58527D21944B7FD0062C5FF /* RootViewController.h */,
-				E583A5451955BE4700B1203C /* DiceViewController.swift */,
+				E583A5451955BE4700B1203C /* DiceCollectionViewController.swift */,
 				E5B172471955EB1A001584ED /* Settings.swift */,
 				E56BFB121956EABC00A5270F /* SettingsViewController.swift */,
 			);
@@ -230,7 +230,7 @@
 				E518D1EE19449BD90009721E /* RootViewController.swift in Sources */,
 				E518D1EC19449BD90009721E /* AppDelegate.swift in Sources */,
 				E51560471944AC1200089FBE /* SettingsTableViewController.swift in Sources */,
-				E583A5461955BE4700B1203C /* DiceViewController.swift in Sources */,
+				E583A5461955BE4700B1203C /* DiceCollectionViewController.swift in Sources */,
 				E5B172481955EB1A001584ED /* Settings.swift in Sources */,
 				E56BFB131956EABC00A5270F /* SettingsViewController.swift in Sources */,
 			);

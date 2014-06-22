@@ -8,7 +8,7 @@
 
 import UIKit
 
-class DiceViewController: UICollectionViewController {
+class DiceCollectionViewController: UICollectionViewController {
     
     override func collectionView(collectionView: UICollectionView!, numberOfItemsInSection section: Int) -> Int {
         return 4
